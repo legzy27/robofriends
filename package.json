@@ -5,14 +5,17 @@
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "^3.4.0",
-    "tachyons": "^4.11.1"
+    "react-scripts": "^4.0.0",
+    "tachyons": "^4.11.1",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "browserslist": {
     "production": [
@@ -25,5 +28,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "snyk": true
 }
